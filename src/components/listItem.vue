@@ -1,20 +1,10 @@
 <template>
 	<div class="container">
-		<h2> Name: {{  name  }}</h2>
-		<p> Department: {{ department }}</p>
-		<p> Salary: {{ salary }}</p>
-		<p> Position: {{ position }}</p>
-		<button @click="$emit('deleteItem', position)"> Delete Item </button>
 	</div>
 </template>
 
 <script setup>
-defineProps({
-	name: String,
-	department: String,
-	salary: Number,
-	position: Number,
-})
+
 </script>
 
 

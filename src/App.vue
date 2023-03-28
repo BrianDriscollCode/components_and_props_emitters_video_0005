@@ -1,37 +1,28 @@
 <template>
 	<main>
-		<listItem
-		     v-for="(item, index) in database" :name="item.name" :department="item.deparment" :salary="item.salary" :position="index"
-             v-on:deleteItem="deleteItem"
-		/>
 	</main>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import listItem from "./components/listItem.vue";
 
 let database = ref([
 	{
 		name: "Johnny",
-		deparment: "Marketing",
+		department: "Marketing",
 		salary: 30000
 	},
 	{
 		name: "Sarah",
-		deparment: "Engineering",
+		department: "Engineering",
 		salary: 72000
 	},
 	{
 		name: "Terrance",
-		deparment: "Executive",
+		department: "Executive",
 		salary: 125000
 	}
 ]);
-
-function deleteItem(position) {
-	database.value.splice(position, 1);
-}
 
 </script>
 
