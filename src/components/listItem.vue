@@ -18,6 +18,7 @@ defineProps({
 </script>
 
 
+
 <style scoped>
 h2 {
 	padding: 0;
